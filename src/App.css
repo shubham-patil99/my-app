@@ -1,38 +1,119 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  padding: 20px;
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100rem;
+  color: #fff;
+}
+
+.App-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 98%;
+  position: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.App-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-nav a:hover {
+  color: #555;
+}
+
+.button-box {
+    /* width: 250px; */
+    height: 150px;
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ten {
+  font-size: 16px;
+  background: white;
+  color: rgb(242, 242, 242);
+  background-color: #fa4f00;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 300ms;
+}
+
+.ten:hover {
+  background-color: #ff8142;
+  color: rgb(242, 242, 242);
+  border:2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.para1{
+  font-size: 20px;
+}
+
+.ten1 {
+  font-size: 15px;
+  background-color: #fa4f00;
+  
+  font-size: 20px;
+  color: #d5d5d5;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 300ms;
+  float: right;
+  position: fixed;
+}
+
+/* .ten1:hover {
+  background-color: #ff8142;
+  color: rgb(242, 242, 242);
+  border:2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+} */
+
+.button-box1 {
+  float: right;
+  margin-right: 0.5em !important;
+  margin-top: 10em;
+  z-index: -1;
+  
+}
+
+.glow {
+  color: #ffffff;
+  -webkit-text-stroke: 0.1vw #ffffff;
+  text-transform: uppercase;
+}
+
+.glow::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #f5f5f5;
+  -webkit-text-stroke: 0vw #ffffff;
+  border-right: 4px solid #fa4f00;
+  overflow: hidden;
+  animation: animate 2s linear infinite;
+
+}
+
+@keyframes animate{
+  0%,10%,100%{
+      width: 0;
   }
-  to {
-    transform: rotate(360deg);
+  70%,90%{
+      width: 100%;
   }
 }
+
+
