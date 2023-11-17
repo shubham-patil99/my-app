@@ -12,7 +12,6 @@ function About() {
           services, including web development, digital marketing, SEO, and SaaS
           app development, we tailor solutions that align perfectly with your
           unique goals and objectives.
-          
         </p>
         </div>
   );

@@ -7,6 +7,7 @@ const Button = () => {
         <>
             <div class="button-box">
                 <button class="ten">Contact Us</button>
+                
             </div>
         </>
     )
