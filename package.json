@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "x.x.x" 
+    "@babel/plugin-proposal-private-property-in-object": "x.x.x"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,7 +26,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "args": "none"
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
