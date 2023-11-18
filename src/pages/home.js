@@ -1,29 +1,9 @@
 import React from 'react';
-import Button from '../componants/button';
-import { useEffect, useState } from 'react';
 
 
 
 function Home() {
 
-  const [data, setData] = useState([]);
-
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts/');
-        const data = await response.json();
-        setData(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-  
-    fetchData();
-  }, []);
-
-  const top10Records = data.slice(0, 10);
 
   return (
     <>
