@@ -1,20 +1,19 @@
-import React from 'react';
-
+import React from "react";
 
 function About() {
   return (
-        <div>
-         <h1>I am About</h1>
-         <p className='para1'>
-          Welcome to IMC, where innovation meets excellence! We
-          are a dynamic marketing company committed to transforming your digital
-          presence and driving your business growth. Indian Marketing Company is Specializing in a range of
-          services, including web development, digital marketing, SEO, and SaaS
-          app development, we tailor solutions that align perfectly with your
-          unique goals and objectives.
-        </p>
-        </div>
+    <div className="p-5" style={{textAlign:"left"}}>
+      <span>INTRODUCTION</span> <h1>Overview.</h1>
+      <p className="para1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+        sapiente ipsum dolorum<br /> dicta eaque cumque inventore molestias, beatae ea
+        quaerat alias accusamus voluptas autem! Alias<br /> odit voluptates in totam
+        vitae dignissimos minus eaque culpa unde tempore dolore aperiam<br />
+        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
+        veniam dolorum ipsum doloribus.
+      </p>
+    </div>
   );
 }
-    
+
 export default About;

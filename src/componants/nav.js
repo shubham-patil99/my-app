@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from "../pages/home";
 import About from "../pages/about";
 import Contact from "../pages/contact";
-import ExpertComp from "./expertcomp";
+import Projects from "../pages/projects";
+// import ExpertComp from "./expertcomp";
+import logo from "../images/logo.png"
 
 function Nav() {
   return (
@@ -11,15 +13,17 @@ function Nav() {
       <Router>
         <div className="App">
           <nav className="App-nav">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/"><img src={logo} alt="imc_logo" className="main-logo"></img></Link>
+            <Link to="/about" className="pt-3">ABOUT</Link>
+            <Link to="/projects" className="pt-3">PROJECTS</Link>
+            <Link to="/contact" className="pt-3">CONTACT</Link> 
             
           </nav>
-          <ExpertComp />
+          {/* <ExpertComp /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

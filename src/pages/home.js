@@ -1,5 +1,6 @@
 import React from 'react';
-
+import MyImg from '../images/shubhamp.png'
+import About from './about';
 
 
 function Home() {
@@ -7,19 +8,20 @@ function Home() {
 
   return (
     <>
-      <div >
-        <h1 className='page-title'>Elevate Your Online Presence with Our Comprehensive Solutions</h1>
-
+    <div className='row hero-sec background-img'>
+      <div className='center-text col' style={{marginTop:"10rem"}}>
+        <h1 className='page-title'>HI, I'M<br /> SHUBHAM</h1>
         <p className='para1'>
-          Welcome to IMC, where innovation meets excellence! We
-          are a dynamic marketing company committed to transforming your digital
-          presence and driving your business growth. Indian Marketing Company is Specializing in a range of
-          services, including web development, digital marketing, SEO, and SaaS
-          app development, we tailor solutions that align perfectly with your
-          unique goals and objectives.
+        I am a Web developer who is professional<br /> of designing and createing<br /> websites or web applications.
         </p>
+      </div>
+
+      <div className='left-text col' style={{marginRight:"0px"}}>
+       <img style={{float:"right", marginRight:"0px", paddingTop:"4rem"}} src={MyImg} alt="shubham"></img>
         
       </div>
+      </div>  
+      <About />
     </>
   );
 }
