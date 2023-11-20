@@ -1,7 +1,7 @@
+
+
 .App {
   text-align: center;
-  padding: 0px;
-
   color: rgb(153 153 161 / var(--tw-text-opacity));
 }
 
@@ -56,23 +56,20 @@
   border-radius: 50px;
 }
 
-.left-text{
+
+.para1{
+  font-size: 30px;
+  font-weight: 500;
   text-align: left;
 }
 
-.para1{
-  font-size: 20px;
-}
-
-.background-img{
-  background-repeat: no-repeat;
-  background-size: 70% 100%;
-  background: url(../src/images/gold-worldmap.png);
-  background-position: center;
-}
-
 .hero-sec{
- background :  linear-gradient(135deg,rgba(244,244,246,.8) 60%,rgba(10,10,10,.95) 60%) ;
+  background: linear-gradient(135deg, rgba(244, 244, 246, 0.8) 60%, rgba(10, 10, 10, 0.95) 60%), url(../src/images/worldmap-new-removebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backface-visibility: hidden;
+  height: 100vh;
 }
 
 .ten1 {
@@ -125,6 +122,7 @@
 
 .page-title{
   margin-top: 5rem;
+  text-align: left;
   font-weight: 900;
   font-size: 5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;

@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="p-5" style={{textAlign:"left"}}>
+    <div style={{textAlign:"left"}}>
       <span>INTRODUCTION</span> <h1>Overview.</h1>
-      <p className="para1">
+      <p >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
         sapiente ipsum dolorum<br /> dicta eaque cumque inventore molestias, beatae ea
         quaerat alias accusamus voluptas autem! Alias<br /> odit voluptates in totam
