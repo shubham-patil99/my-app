@@ -5,7 +5,7 @@ function Projects() {
   return (
         <div>
          <h1>I am About</h1>
-         <p className='para1'>
+         <p >
           Welcome to IMC, where innovation meets excellence! We
           are a dynamic marketing company committed to transforming your digital
           presence and driving your business growth. Indian Marketing Company is Specializing in a range of
